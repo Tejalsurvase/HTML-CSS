@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Transition</title>
+	<style type="text/css">
+		.divi{
+			height: 40px;
+			width: 40px;
+			background-color: lightblue;
+			margin-top: 5px;
+			transition-duration: 4s;
+		}
+		.divi:hover{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="divi"></div>
+	<div class="divi" style="transition-timing-function: ease;">ease</div>
+	<div class="divi" style="transition-timing-function: ease-in;">ease-in</div>
+	<div class="divi" style="transition-timing-function: ease-out;">ease-out</div>
+	<div class="divi" style="transition-timing-function: linear;">linear</div>
+	<div class="divi" style="transition-timing-function: steps(20,start);">steps</div>
+
+</body>
+</html>

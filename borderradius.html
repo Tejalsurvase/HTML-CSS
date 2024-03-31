@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BORDER RADIUS</title>
+	<style type="text/css">
+		.mdiv{
+			height: 500px;
+			width: 500px;
+			margin: 50px;
+			background-color: hotpink;
+			transition-duration: 3s;
+			border-top: 3px dashed red;
+			border-bottom: 3px dashed red;
+/*			border-radius: 20px;*/
+        }
+        .mdiv:hover{
+        	border-top: 4px groove purple;
+        	border-bottom: 4px groove purple;
+        	border-top-left-radius: 190px;
+            border-bottom-right-radius: 190px;
+            border-top-right-radius: 190px;
+            border-bottom-left-radius: 190px;
+            transform:rotate(90deg);
+        }
+	</style>
+</head>
+<body>
+	<div class="mdiv"></div>
+
+</body>
+</html>

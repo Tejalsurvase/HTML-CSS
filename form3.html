@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+</head>
+<body>
+	<div>
+		<form>
+			<fieldset>
+				<label for="ph">Phone :</label>
+				<input type="text" name="phone" size="15" required autofocus maxlength="10" autocomplete="off" pattern="[6-9]{1}[0-9]{9}">
+				<br><br>
+				<label for="usr">username :</label>
+				<input type="text" name="usr" size="15" required maxlength="15" autocomplete="off" pattern="[A-Z,a-z,0-9]{10,15}">
+				<br><br>
+				<input type="submit" name="sub">
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

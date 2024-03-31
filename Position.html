@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Position</title>
+	<style type="text/css">
+		.division{
+			background-color: hotpink;
+			height: 200px;
+			width: 200px;
+		}
+		.abs{
+			position: absolute;
+			background-color: purple;
+			z-index: 3;
+			top: 0px;
+			left: 0px;
+		}
+		.rel{
+			position: relative;
+			z-index: 3;
+			top: 0px;
+			left: 0px;
+		}
+		.innerclass{
+			height: 100px;
+			width: 100px;
+			border-radius: 50px;
+			background-color: black;
+			margin-top: 35px;
+			margin-left: 45px;
+		}
+		.fix{
+			overflow: hidden;
+			background-color: lightblue;
+			height: 30px;
+			width: 100%;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			z-index: 5;
+		}
+		.phn{
+			position: fixed;
+			bottom: 0px;
+			right: 0px;
+		}
+		.stick{
+			position: sticky;
+			top: 60px;
+		}
+		.stat{
+			position: static;
+			height: 30px;
+			width: 140px;
+            background-color: red;
+            left: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div class="abs division">
+		absolute
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<div class="stat">
+		hi I am static div
+	    </div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur.
+		<div class="stick">
+			<marquee style="color: red; background-color: lightblue;">
+				Hi I am good girl.
+			</marquee>
+			
+		</div> 
+		Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+	<div class="rel division">
+		relative
+		<div class="innerclass">
+		</div>
+	</div>
+    <div class="fix">Navbar</div>
+    <div class="phn">
+    	<span onclick="displayNumber()" id="op">&#128241</span>
+    </div>
+    <script type="text/javascript">
+    	function displayNumber() {
+    		document.getElementById("op").innerHTML="746783687648 &#128241"
+    	}
+    </script>
+</body>
+</html>

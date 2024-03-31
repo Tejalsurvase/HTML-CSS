@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BeforeAfter</title>
+	<style type="text/css">
+		.mdiv::before{
+			content: " ";
+			display: block;
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			border-radius: 100px;
+			margin-top: 200px;
+			margin-left: -250px;
+		}
+		.mdiv{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			margin-left: 300px;
+			margin-top: 200px;
+		}
+		.mdiv::after{
+			width: 200px;
+			height: 200px;
+			content: " ";
+			display: block;
+			background-color: yellow;
+			border-radius: 100px;
+		    margin-top: -200px;
+		    margin-left: 250px;
+		}
+	</style>
+</head>
+<body>
+	<div class="mdiv"></div>
+
+</body>
+</html>
